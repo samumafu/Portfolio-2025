@@ -2,7 +2,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Github, Linkedin, Twitter, ExternalLink } from 'lucide-react';
+import { Github, Linkedin, ExternalLink } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -10,19 +10,15 @@ export default function Footer() {
   const socialLinks = [
     { 
       icon: <Github className="h-5 w-5" />, 
-      href: "https://github.com", 
+      href: "https://github.com/samumafu", 
       label: "GitHub"
     },
     { 
       icon: <Linkedin className="h-5 w-5" />, 
-      href: "https://linkedin.com", 
+      href: "https://www.linkedin.com/in/samuel-felipe-ibarra-munoz-", 
       label: "LinkedIn"
     },
-    { 
-      icon: <Twitter className="h-5 w-5" />, 
-      href: "https://twitter.com", 
-      label: "Twitter"
-    },
+    
   ];
 
   const navLinks = [
