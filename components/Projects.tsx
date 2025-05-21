@@ -2,56 +2,44 @@
 
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
-import { ExternalLink, Github } from 'lucide-react';
+import { Github } from 'lucide-react';
 
 const projects = [
   {
     title: 'Reproductor de Música',
     description: 'Python | Flask | Reproductor con interfaz gráfica',
     image: 'https://images.pexels.com/photos/1626481/pexels-photo-1626481.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    color: 'bg-blue-500',
-    link: '#',
-    github: '#'
+    color: 'bg-blue-500'
   },
   {
     title: 'Gestión de Citas Médicas',
     description: 'Python | Seguimiento de citas | Cálculo del hospital más cercano',
     image: 'https://images.pexels.com/photos/7579831/pexels-photo-7579831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    color: 'bg-indigo-500',
-    link: '#',
-    github: '#'
+    color: 'bg-indigo-500'
   },
   {
     title: 'Gestión de Inventario',
     description: 'Python | Django | App para control de inventario',
     image: 'https://images.pexels.com/photos/4481259/pexels-photo-4481259.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    color: 'bg-purple-500',
-    link: '#',
-    github: '#'
+    color: 'bg-purple-500'
   },
   {
     title: 'Sistema de Parqueadero',
     description: 'Java | Spring Boot | Control de parqueadero',
-    image: 'https://images.pexels.com/photos/1004403/pexels-photo-1004403.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    color: 'bg-pink-500',
-    link: '#',
-    github: '#'
+    image: 'https://images.pexels.com/photos/3841440/pexels-photo-3841440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', // Imagen reemplazada
+    color: 'bg-pink-500'
   },
   {
     title: 'E-commerce Platform',
     description: 'Next.js | Node.js | PostgreSQL | Plataforma de comercio electrónico',
     image: 'https://images.pexels.com/photos/6169659/pexels-photo-6169659.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    color: 'bg-blue-600',
-    link: '#',
-    github: '#'
+    color: 'bg-blue-600'
   },
   {
     title: 'API RESTful',
     description: 'Java | Spring Boot | PostgreSQL | API REST para gestión de proyectos',
     image: 'https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    color: 'bg-indigo-600',
-    link: '#',
-    github: '#'
+    color: 'bg-indigo-600'
   }
 ];
 
@@ -70,7 +58,7 @@ export default function Projects() {
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Check on initial load
+    handleScroll();
     
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -125,25 +113,15 @@ export default function Projects() {
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
                   {project.description}
                 </p>
-                <footer className="flex justify-between items-center mt-4">
+                <footer className="flex justify-end mt-4">
                   <a 
-                    href={project.github} 
+                    href="https://github.com/samumafu" 
                     className="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label="Ver código en GitHub"
+                    aria-label="Visitar perfil de GitHub"
                   >
                     <Github size={20} />
-                  </a>
-                  <a 
-                    href={project.link} 
-                    className="flex items-center gap-1 text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300 transition-colors"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Ver proyecto en vivo"
-                  >
-                    Ver proyecto
-                    <ExternalLink size={16} />
                   </a>
                 </footer>
               </figcaption>
