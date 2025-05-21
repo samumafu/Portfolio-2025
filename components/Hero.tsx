@@ -44,11 +44,10 @@ export default function Hero() {
               Desarrollador Full Stack
             </h2>
             <p className="text-gray-700 dark:text-gray-300 mb-8 text-lg">
-              Con 25 años de experiencia en programación, me especializo 
-              en crear soluciones digitales efectivas y visualmente atractivas. 
-              Diseño y desarrollo aplicaciones utilizando múltiples tecnologías 
-              como Python, Java, JavaScript y frameworks modernos como 
-              React, Next.js y Spring Boot.
+             Soy estudiante de Ingeniería en Software con más de 2.5 años de formación y práctica en desarrollo de software. 
+             Creo soluciones digitales funcionales y atractivas. He trabajado con Patrones de Diseno, lenguajes como Python, Java y JavaScript, 
+             y utilizo una amplia cantidad de frameworks para construir aplicaciones, web y APIs y Cloud como Azure y AWS. Mi enfoque está en escribir código limpio, 
+             aprender constantemente y desarrollar productos que generen valor real..
             </p>
             <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
               <a 
