@@ -12,8 +12,8 @@ const workExperience = [
   },
   {
     title: "Desarrollador Front-end",
-    company: "Freelance / Proyectos Personales",
-    period: "2021 - 2022",
+    company: "Proyectos Académicos y Personales",
+    period: "2022 - Presente",
     description: "Interfaces modernas con React, TailwindCSS y frameworks modernos como Vite y Next.js.",
   },
 ];

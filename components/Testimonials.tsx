@@ -5,9 +5,10 @@ import { cn } from '@/lib/utils';
 import { Quote, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const testimonials = [
+  
   {
     id: 1,
-    content: "Samuel es un desarrollador excepcional. Sus conocimientos técnicos y capacidad de resolver problemas complejos lo convierten en un miembro valioso para cualquier equipo.",
+    content: "Samuel siempre fue alguien en quien podíamos confiar para resolver los problemas del proyecto. Tiene mucha paciencia y explica bien cuando alguien se pierde.",
     name: "Juan Vizuette",
     role: "Companero UCC",
     initials: "JV",
@@ -15,7 +16,7 @@ const testimonials = [
   },
   {
     id: 2,
-    content: "Trabajar con Samuel fue una experiencia extraordinaria. Su atención al detalle y compromiso con la calidad son admirables. Entregó el proyecto antes de lo previsto y superó nuestras expectativas.",
+    content: "Me gustó mucho trabajar con Samuel. Siempre estaba pendiente de que todo saliera bien y nos ayudaba cuando algo no funcionaba. Súper responsable.",
     name: "Valery Rosero",
     role: "Companera UCC",
     initials: "VR",
@@ -23,7 +24,7 @@ const testimonials = [
   },
   {
     id: 3,
-    content: "Samuel tiene una capacidad única para traducir requisitos complejos en soluciones elegantes y eficientes. Su conocimiento técnico y enfoque colaborativo lo hacen un activo excepcional.",
+    content: "Samuel entiende rápido las ideas y propone soluciones que uno no había pensado. Da gusto trabajar con él porque siempre suma al equipo.",
     name: "Jose Mafla",
     role: "Companero UCC",
     initials: "JM",
@@ -31,7 +32,7 @@ const testimonials = [
   },
   {
     id: 4,
-    content: "Un profesional destacado que siempre va más allá de las expectativas. Su capacidad para innovar y resolver problemas es impresionante.",
+    content: "Es de los que se toman en serio los trabajos en grupo. Siempre aportó con ideas buenas y ayudaba a mantener todo en orden. Muy comprometido.",
     name: "Diego Ceron",
     role: "Companero UCC",
     initials: "DC",
@@ -39,13 +40,14 @@ const testimonials = [
   },
   {
     id: 5,
-    content: "La dedicación de Samuel a la excelencia técnica es incomparable. Un verdadero experto en su campo.",
+    content: "Samuel se nota que le gusta lo que hace. Siempre estaba investigando más allá y nos compartía cosas útiles. Aprendí bastante trabajando con él.",
     name: "Javier Ordones",
     role: "Companero UCC",
     initials: "JO",
     color: "bg-red-100 text-red-700 dark:bg-red-900 dark:text-red-300",
   },
 ];
+
 
 export default function Testimonials() {
   const [isVisible, setIsVisible] = useState(false);

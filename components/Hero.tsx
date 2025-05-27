@@ -3,6 +3,7 @@
 import { ArrowDown, Download } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { cn } from '@/lib/utils';
+import Image from 'next/image';
 
 export default function Hero() {
   const [isVisible, setIsVisible] = useState(false);
@@ -24,11 +25,15 @@ export default function Hero() {
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             )}
           >
-            <span className="relative flex h-56 w-56 md:h-64 md:w-64 overflow-hidden rounded-full bg-indigo-100 dark:bg-indigo-800 border-4 border-indigo-500">
-              <span className="absolute inset-0 flex items-center justify-center text-6xl font-bold text-indigo-600 dark:text-indigo-300">
-                SI
-              </span>
-            </span>
+            <div className="relative h-56 w-56 md:h-64 md:w-64 overflow-hidden rounded-full border-4 border-indigo-500 shadow-lg">
+              <Image
+                src="/profile.jpeg"
+                alt="Foto de Samuel"
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
           </figure>
           
           <div 
@@ -41,14 +46,15 @@ export default function Hero() {
               ¡Hola, soy Samuel!
             </h1>
             <h2 className="text-xl md:text-2xl text-indigo-600 dark:text-indigo-400 mb-6">
-              Desarrollador Full Stack
+              Desarrollador de Software
             </h2>
-            <p className="text-gray-700 dark:text-gray-300 mb-8 text-lg">
-             Soy estudiante de Ingeniería en Software con más de 2.5 años de formación y práctica en desarrollo de software. 
-             Creo soluciones digitales funcionales y atractivas. He trabajado con Patrones de Diseno, lenguajes como Python, Java y JavaScript, 
-             y utilizo una amplia cantidad de frameworks para construir aplicaciones, web y APIs y Cloud como Azure y AWS. Mi enfoque está en escribir código limpio, 
-             aprender constantemente y desarrollar productos que generen valor real..
+            <p className="text-gray-700 dark:text-gray-300 mb-4 text-lg">
+              Soy estudiante de Ingeniería en Software con más de 2.5 años de formación y práctica en desarrollo de software. En este tiempo he aprendido mucho sobre desarrollo web y móvil, pero sin duda, mi parte favorita es todo lo relacionado con la nube. Sin embargo, no me encasillo; el aprendizaje e innovación constante son clave en este rubro.
             </p>
+            <p className="text-black dark:text-white text-xl font-semibold mb-8 ">
+              Desarrollar en la nube ya no es el futuro, es el estándar.
+            </p>
+
             <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
               <a 
                 href="#contact" 
@@ -57,7 +63,7 @@ export default function Hero() {
                 Contáctame
               </a>
               <a 
-                href="/SamuelIbarra_CV.pdf" 
+                href="/cv-en-proceso.pdf" 
                 download 
                 className="bg-white dark:bg-gray-800 text-indigo-600 dark:text-indigo-400 border border-indigo-600 dark:border-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-700 px-6 py-3 rounded-lg flex items-center justify-center gap-2 transition-colors shadow-md"
               >
